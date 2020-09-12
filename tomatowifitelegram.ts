@@ -30,7 +30,7 @@ let _chatIDVal = ""
 /**
  * Blocks
  */
-//% weight=100 color=#f39c12 icon="\uf3fe" block="TomatoWifiTelegram"
+//% weight=100 color=#36ade1 icon="\uf3fe" block="TomatoWifiTelegram"
 
 namespace TOMATOWIFITELEGRAM {
     
