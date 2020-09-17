@@ -30,7 +30,7 @@ let _chatIDVal = ""
 /**
  * Blocks
  */
-//% weight=100 color=#36ade1 icon="\uf3fe" block="TomatoWifiTelegram"
+//% weight=100 color=#36ade1 icon="\uf086" block="TomatoWifiTelegram"
 
 namespace TOMATOWIFITELEGRAM {
     
@@ -57,7 +57,7 @@ namespace TOMATOWIFITELEGRAM {
     }
     
     //% block="Get Last Telegram Message" 
-    export function getBlynkPin():string {
+    export function getChatMsg():string {
             return _chatMsg
     }
 
