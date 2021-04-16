@@ -66,6 +66,12 @@ namespace TOMATOWIFITELEGRAM {
         serial.writeString("c"+ msgString + "\n")
         basic.pause(100)
     }
+    
+    //% block="Send a reset signal to the WIFI module" 
+    export function resetWifi() {
+        serial.writeString("R!\n")
+        basic.pause(2000)
+    }
 
     //% block="Connect Wifi to SSID %ssid with a passcode %passcode with a Telegram BotId of %botid and a TimeZone of %timezone Ready indication %readyImg" 
     //% ssid.defl=MySSID passcode.defl=MyPasscode botid.defl=TelegramBotID, readyImg.defl = false
