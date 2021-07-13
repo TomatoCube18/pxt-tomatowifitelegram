@@ -44,7 +44,7 @@ namespace TOMATOWIFITELEGRAM {
     export function isTelegramMsgTrue(receivedString: string):boolean { //TELEGRAM=-385342091,Testing
         if (receivedString.includes("TELEGRAM=") && TomatoWifiConnected) { 
             _chatIDVal = receivedString.substr(receivedString.indexOf("=") + 1, receivedString.indexOf(",") - receivedString.indexOf("=") - 1)
-            _chatMsg = receivedString.substr(receivedString.indexOf(",") + 1, receivedString.length() - receivedString.indexOf(",") - 2)
+            _chatMsg = receivedString.substr(receivedString.indexOf(",") + 1, receivedString.length - receivedString.indexOf(",") - 2)
             return true
         } else {
             return false
